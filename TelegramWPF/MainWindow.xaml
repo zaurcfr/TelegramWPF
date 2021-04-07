@@ -6,15 +6,15 @@
         xmlns:local="clr-namespace:TelegramWPF"
         mc:Ignorable="d"
         Title="MainWindow" Height="500" Width="800">
-   
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="9*"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <Label Grid.Row="0" Background="LightBlue" Content="Telegram" FontSize="28" FontFamily="Comic Sans MS" HorizontalContentAlignment="Center">
-            
+        <Label Grid.Row="0" Background="#0088cc" Content="Telegram" FontSize="26" FontFamily="Comic Sans MS" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+
         </Label>
 
         <Grid Grid.Row="1" Background="GhostWhite">
@@ -23,7 +23,7 @@
                 <ColumnDefinition Width="5*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
 
-            <Grid Grid.Column="0" Background="LightSlateGray">
+            <Grid Grid.Column="0" Background="LightBlue">
                 <Grid.RowDefinitions>
                     <RowDefinition></RowDefinition>
                     <RowDefinition></RowDefinition>
@@ -33,43 +33,44 @@
                     <RowDefinition></RowDefinition>
                     <RowDefinition></RowDefinition>
                 </Grid.RowDefinitions>
-                <Label Grid.Row="0" Content="Ayxan" FontSize="30" FontWeight="SemiBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></Label>
-                <Label Grid.Row="1" Content="Arif" FontSize="30" FontWeight="SemiBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></Label>
-                <Label Grid.Row="2" Content="Amin" FontSize="30" FontWeight="SemiBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></Label>
-                <Label Grid.Row="3" Content="Elgun" FontSize="30" FontWeight="SemiBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></Label>
-                <Label Grid.Row="4" Content="Resul" FontSize="30" FontWeight="SemiBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></Label>
-                <Label Grid.Row="5" Content="Metin" FontSize="30" FontWeight="SemiBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></Label>
-                <Label Grid.Row="6" Content="Zaur" FontSize="30" FontWeight="SemiBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></Label>
+                <local:UserControl1 Grid.Row="0" NameLabel="Ayxan" image="Photos\ayxan.jpg"></local:UserControl1>
+                <local:UserControl1 Grid.Row="1" NameLabel="Arif" image="Photos\arif.jpg"></local:UserControl1>
+                <local:UserControl1 Grid.Row="2" NameLabel="Elgun" image="Photos\elgun.jpg"></local:UserControl1>
+                <local:UserControl1 Grid.Row="3" NameLabel="Resul" image="Photos\resul.jpg"></local:UserControl1>
+                <local:UserControl1 Grid.Row="4" NameLabel="Amin" image="Photos\amin.jpg"></local:UserControl1>
+                <local:UserControl1 Grid.Row="5" NameLabel="Metin" image="Photos\metin.jpg"></local:UserControl1>
+                <local:UserControl1 Grid.Row="6" NameLabel="Mehrac" image="Photos\mehrac.jpg"></local:UserControl1>
+
+
+
             </Grid>
-            
+
             <Grid Grid.Column="1">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="6*"></RowDefinition>
                     <RowDefinition Height="*"></RowDefinition>
                 </Grid.RowDefinitions>
-                
-                <Grid Grid.Row="0">
-                    <Label Content="Messages" Background="LightGray"></Label>
-                </Grid>
-                
+
+                <Image Grid.Row="0" Source="Photos\telegram screenshot.png" Stretch="Fill"></Image>
+
                 <Grid Grid.Row="1">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="7*"></ColumnDefinition>
                         <ColumnDefinition Width="*"></ColumnDefinition>
                     </Grid.ColumnDefinitions>
-                    <TextBox Grid.Column="0"></TextBox>
-                    <Button Grid.Column="1" Content="Send" FontSize="16" FontWeight="SemiBold" FontFamily="Comic Sans MS" Background="LightBlue"></Button>
+                    <RichTextBox Grid.Column="0" FontSize="20" ></RichTextBox>
+                    <Button Grid.Column="1" Content="Send" FontSize="16" FontWeight="SemiBold" FontFamily="Comic Sans MS" Background="#0088cc"></Button>
                 </Grid>
-                
+
             </Grid>
-            
-            
+
+
         </Grid>
-        
+
     </Grid>
 
 
-    
-    
-    
+
+
+
 </Window>
